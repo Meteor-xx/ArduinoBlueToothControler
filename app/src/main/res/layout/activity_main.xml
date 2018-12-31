@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+       <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lanya"
+            />
+
+            <Button
+                android:id="@+id/discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scan"
+                style="@style/baseButton"
+                app:layout_constraintTop_toBottomOf="@+id/switch1"
+                />
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show"
+                style="@style/baseButton"
+                app:layout_constraintTop_toBottomOf="@+id/discover"
+                />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/text_1"
+           app:layout_constraintTop_toBottomOf="@+id/show"
+           android:id="@+id/texts"
+           />
+
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/device_lists"
+           android:choiceMode="singleChoice"
+           app:layout_constraintTop_toBottomOf="@+id/texts"
+           />
+
+
+
+</android.support.constraint.ConstraintLayout>
